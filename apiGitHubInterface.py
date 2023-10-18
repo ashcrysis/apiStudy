@@ -54,7 +54,20 @@ def get_repo_info(user_name, repo_name):
 root = tk.Tk()
 root.title("GitHub Repository Info")
 root.configure(bg='#251627')  # Roxo escuro
+#Defines window height and width
+window_height = 350
+window_width = 500
 
+#Receives screen width and height
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+games = []
+#Define coordinates based on monitor 
+x_cordinate = int((screen_width/2) - (window_width/2))
+y_cordinate = int((screen_height/2) - (window_height/2))
+
+#Defines the screen geometry
+root.geometry("{}x{}+{}+{}".format(window_width, window_height, x_cordinate, y_cordinate))
 # Adicionar frame acinzentado
 style = ttk.Style()
 style.configure('TFrame', background='#4B0082')  # Roxo escuro
