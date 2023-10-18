@@ -12,7 +12,7 @@ def buscar_no_google(query, num_results=10, lang='pt-br'):
     return resultados
 
 # String que você deseja pesquisar
-minha_busca = "Como ensinar um cão a rolar no chão"
+minha_busca = "Ashcrysis"
 
 # Número de resultados que você deseja obter (até 10)
 numero_resultados = 10
